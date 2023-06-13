@@ -1,2 +1,2 @@
-// import "./01-algorithm-me/test";
-import "./03-write-code-me/event-subject";
+import "./01-algorithm-me/maopao";
+// import "./03-write-code-me/event-subject";
