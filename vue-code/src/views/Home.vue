@@ -10,7 +10,8 @@
     <!-- <LifeCycleDemo/> -->
     <!-- <KeepAliveDemo/> -->
     <!-- <AsyncComponentDemo/> -->
-    <ErrorDemo/>
+    <ErrorDemo />
+    <AdvancedUseDemo />
   </div>
 </template>
 
@@ -25,6 +26,7 @@
 // import LifeCycleDemo from '@/components/LifeCycle'
 // import KeepAliveDemo from '@/components/KeepAlive/index'
 // import AsyncComponentDemo from '@/components/AsyncComponent/index'
+import AdvancedUseDemo from '@/components/AdvancedUse'
 import ErrorDemo from '@/components/ErrorDemo'
 
 export default {
@@ -40,6 +42,7 @@ export default {
     // KeepAliveDemo,
     // AsyncComponentDemo,
     ErrorDemo,
+    AdvancedUseDemo
   },
   methods: {
     showMsg(msg) {
