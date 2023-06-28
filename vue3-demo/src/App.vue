@@ -1,15 +1,15 @@
 <template>
-  <!-- <HelloWorld msg="Hello Vue 3.0 + Vite" @onSayHello="sayHello"/> -->
+  <!-- <HelloWorld msg="Hello Vue 3.0 + Vite" @onSayHello="sayHello" /> -->
   <!-- <life-cycles :msg="msg" v-if="flag" /> -->
   <!-- <Ref /> -->
   <!-- <ToRef /> -->
   <!-- <ToRefs /> -->
   <!-- <RefTemplate /> -->
-  <WhyRef />
-  <!-- <VModel/> -->
-  <!-- <MousePosition v-if="flag"/> -->
-  <!-- <Watch/> -->
-  <!-- <GetInstance/> -->
+  <!-- <WhyRef /> -->
+  <!-- <VModel /> -->
+  <!-- <MousePosition v-if="flag" /> -->
+  <!-- <Watch /> -->
+  <GetInstance />
   <!-- <ToRefsForDeepObj/> -->
 
   <hr>

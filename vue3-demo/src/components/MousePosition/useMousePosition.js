@@ -1,28 +1,22 @@
-import { reactive, ref, onMounted, onUnmounted } from 'vue'
+import { reactive, ref, onMounted, onUnmounted } from "vue";
 
 function useMousePosition() {
-    const x = ref(0)
-    const y = ref(0)
-
-    function update(e) {
-        x.value = e.pageX
-        y.value = e.pageY
-    }
-
-    onMounted(() => {
-        console.log('useMousePosition mounted')
-        window.addEventListener('mousemove', update)
-    })
-
-    onUnmounted(() => {
-        console.log('useMousePosition unMounted')
-        window.removeEventListener('mousemove', update)
-    })
-
-    return {
-        x,
-        y
-    }
+  const x = ref(0);
+  const y = ref(0);
+  const update = (e) => {
+    x.value = e.pageX;
+    y.value = e.pageY;
+  };
+  onMounted(() => {
+    window.addEventListener("mousemove", update);
+  });
+  onUnmounted(() => {
+    window.removeEventListener("mousemove", update);
+  });
+  return {
+    x,
+    y,
+  };
 }
 
 // function useMousePosition2() {
@@ -49,5 +43,5 @@ function useMousePosition() {
 //     return state
 // }
 
-export default useMousePosition
+export default useMousePosition;
 // export default useMousePosition2

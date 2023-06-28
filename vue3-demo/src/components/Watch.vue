@@ -1,7 +1,7 @@
 <template>
     <p>watch vs watchEffect</p>
-    <p>{{numberRef}}</p>
-    <p>{{name}} {{age}}</p>
+    <p>{{ numberRef }}</p>
+    <p>{{ name }} {{ age }}</p>
 </template>
 
 <script>
@@ -36,7 +36,7 @@ export default {
         setTimeout(() => {
             state.name = '双越A'
         }, 3000)
-        
+
 
         // watch(numberRef, (newNumber, oldNumber) => {
         //     console.log('ref watch', newNumber, oldNumber)
